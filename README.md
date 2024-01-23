@@ -4,4 +4,4 @@
 
 Full Stack Software Engineer based in Dublin, Ireland.
 
-Resume: [Doc](./HoseinEmrani_CV.docx) - [PDF](./HoseinEmrani_CV.pdf)
+Resume in [PDF](./HoseinEmrani_CV.pdf)

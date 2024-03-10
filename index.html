@@ -13,11 +13,29 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- End of Social Media Metadata -->
     <style>
+				:root {
+					--text: #333;
+					--bg: #f4f4f4;
+					--link: #0000ee;
+					--link-hover: #6097c3;
+				}
+				@media (prefers-color-scheme: dark) {
+					:root {
+						--text: #fff;
+						--bg: #1a1717;
+						--link: #0085fb;
+						--link-hover: #4aa1ee;
+					}
+				}
         body {
-					font-family: "Lato", sans-serif;
+					font-family: "Bricolage Grotesque", sans-serif;
+  				font-optical-sizing: auto;
+					font-style: normal;
+  				font-variation-settings: "width" 100;
 					margin: 0;
 					padding: 0;
-					background-color: #f4f4f4;
+					background-color: var(--bg);
+					color: var(--text);
         }
         .container {
 					max-width: 800px;
@@ -26,44 +44,65 @@
 					text-align: left;
         }
         h1 {
-					color: #333;
+					font-size: 3em;
+					display: flex;
+					vertical-align: middle;
+					align-items: center;
         }
+				h1 > img {
+					display: block;
+					margin: 0 0.5em;
+					border-radius: 50%;
+					max-width: 1em;
+					transition: transform .65s cubic-bezier(0.48, -0.73, 0.57, 1.53);
+				}
+				h1 > img:hover {
+					transform: scale(2);
+				}
         p {
-					color: #333;
-					font-size: 18px;
-					line-height: 1.7em;
+					color: var(--text);
+					font-size: 1.5em;
+					line-height: 1.5em;
         }
 				a, a:visited {
-					color: rgb(0,0,238)
+					color: var(--link)
 				}
 				a:hover {
-					color: rgb(39, 130, 204)
+					color: var(--link-hover)
 				}
 				a.social_links {
 					margin: 0 1em 0 0;
 				}
-        .profile-img {
-            border-radius: 50%;
-            max-width: 200px;
-            margin-bottom: 20px;
-        }
+				.sep {
+					margin-right: 1em;
+					opacity: .5;
+				}
+				@media screen and (max-width: 600px) {
+					h1 > img {
+						max-width: 2em;
+					}
+					h1 > img:hover {
+						transform: none;
+					}
+				}
     </style>
 </head>
 <body>
 	<div class="container">
-		<img src="./profile.jpg" alt="Profile Picture" class="profile-img">
-		<h1>Hi, I'm Hosein Emrani!</h1>
-		<p>I'm a Software Engineer based in Dublin, Ireland. I've been making software hosted on web for startups, individuals and companies.</p>
+		
+		<h1>Hi! I'm Hosein Emrani. <img src="./profile.jpg" alt="Profile Picture" class="profile-img"></h1>
+		<p>I'm a Software Engineer based in Dublin, Ireland. I've been making cloud based solutions on web for startups, individuals and companies for a few years now.</p>
 		<p>I also take photos, it's my hobby. They're mostly random shots on street, or from around the world anytime I travel. You can see them on my Instagram, and soon on my side project <a target="_blank" href="https://untitledframes.com">Untitled Frames</a>.</p>
 		<p>Feel free to contact me for any thing related to code, or photography.</p>
 		<p>
 			<a class="social_links" target="_blank" href="https://linkedin.com/in/hoseinemrani">Linkedin</a>
 			<a class="social_links" target="_blank" href="https://github.com/hoseinemrani">Github</a>
 			<a class="social_links" target="_blank" href="./HoseinEmrani_CV.pdf">Resume</a>
+			<span class="sep">/</span>
 			<a class="social_links" target="_blank" href="https://instagram.com/_hosein">Instagram</a>
 		</p>
 	</div>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQLXHL00CR"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+				:root {
+					--text: #333;
+					--bg: #f4f4f4;
+					--link: #0000ee;
+					--link-hover: #6097c3;
+				}
+				@media (prefers-color-scheme: dark) {
+					:root {
+						--text: #fff;
+						--bg: #1a1717;
+						--link: #0085fb;
+						--link-hover: #4aa1ee;
+					}
+				}
+        body {
+					font-family: "Bricolage Grotesque", sans-serif;
+  				font-optical-sizing: auto;
+					font-style: normal;
+  				font-variation-settings: "width" 100;
+					margin: 0;
+					padding: 0;
+					background-color: var(--bg);
+					color: var(--text);
+        }
+        p {
+					color: var(--text);
+					font-size: 1.5em;
+					line-height: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+	<div style="height: 100vh; display: flex; align-items: center; margin: auto; justify-content: center;">
+		<p style="padding: 0; margin: 0; text-align: center;">Redirecting to my CV on Google Drive...</p>
+	</div>
+</body>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-DQLXHL00CR');
+</script>
+
+<script>
+	setTimeout(() => {
+		window.location.assign('https://drive.google.com/file/d/11g4dqxPH2cEQYPQ_mEteSipASPA9x1ko/view?usp=share_link')
+	}, 2500)
+</script>
+</html>

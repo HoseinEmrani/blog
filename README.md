@@ -4,4 +4,4 @@
 
 Full Stack Software Engineer based in Dublin, Ireland.
 
-📄 [Resume](https://cv.hosein.me)
+📄 [Resume](https://hosein.me/cv)
